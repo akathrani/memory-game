@@ -12,7 +12,7 @@ ul li {
 .container {
   background: #716F71;
   margin: 0 auto;
-  width: 90%;
+  width: 50%;
   padding: 1%;
   border-radius: 0.3rem;
   box-shadow: 7px 7px 5px -3px #716F71;
@@ -56,7 +56,8 @@ ul li {
   color: #FFD700; }
 
 .mdc li i {
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+}
 
 .container ul {
   display: flex;
@@ -75,7 +76,16 @@ ul li {
   font-size: 2rem;
   color: #fff;
   border-radius: 0.3rem;
-  cursor: pointer; }
+  cursor: pointer;
+  font-family: "Font Awesome 5 Free";}
+
+
+.container ul li.diamond:before {
+  content: "\f3a5";
+ }
+.container ul li:before {
+  content: "\f128";
+ }
 
 /**
  * ----------------------------------------
