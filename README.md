@@ -6,12 +6,11 @@ The game ends when all diamonds are found. The user's score is the number of squ
 <ul>
 	<li>Make sure you have a recent version of <code>Node.js</code> installed.</li>
 	<li>Create React App to make a new project:</li>
+	<li>Delete all files in the src/ folder of the new project.</li>
 
 ```bash
 	npx create-react-app diamond-sweeper
 ```
-
-	<li>Delete all files in the src/ folder of the new project.</li>
 ```bash
 	cd diamond-sweeper
 	cd src
