@@ -22,15 +22,15 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Mind Games - Quintype App</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="wrapper">
-      <div id="root"></div>
+    <div id="wrapper" role="main">
+      <div id="pt"></div><!-- Page Title -->
       <section class="container sir">
-        <div id="deck"></div>
-      </section>
+        <div id="deck" role="group" aria-labelledby="clicktoflip" tabindex="1"></div>
+      </section><!-- .Slide-in-Right -->
     </div>
     <!--
       This HTML file is a template.
