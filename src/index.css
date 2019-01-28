@@ -1,7 +1,8 @@
 html,
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: Comic Sans MS;}
 
 ul {
   padding: 0; }
@@ -9,55 +10,32 @@ ul {
 ul li {
   list-style: none; }
 
+
+.hidedock {
+  display: none;
+}
+
+.showscore {
+  display: block;
+}
+
 .container {
-  background: #716F71;
   margin: 0 auto;
-  width: 50%;
-  padding: 1%;
-  border-radius: 0.3rem;
+  width: 50%; }
+
+  #deck {
+    background: #716F71;
+    border-radius: 0.3rem;
   box-shadow: 7px 7px 5px -3px #716F71;
   -webkit-box-shadow: 7px 7px 5px -3px #716F71;
-  -moz-box-shadow: 7px 7px 5px -3px #716F71; }
+  -moz-box-shadow: 7px 7px 5px -3px #716F71;
+  }
 
 #wrapper h1 {
   color: #b49450;
   text-align: center;
-  font-family: Comic Sans MS;
   text-align: center;
   font-size: 2.6rem; }
-
-.mdc ul {
-  text-align: center;
-  padding: 0.8rem 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 50%;
-  margin: 0 auto; }
-
-.mdc li:nth-child(2) {
-  display: flex;
-  font-family: Comic Sans MS;
-  font-size: 1.5rem; }
-
-.mdc li:nth-child(2) div {
-  margin-right: 0.5rem; }
-
-.mdc li:first-child {
-  justify-content: flex-start; }
-
-.mdc li:last-child {
-  justify-content: flex-end; }
-
-.mdc li:last-child a {
-  color: #b49450; }
-
-.mdc li:first-child i {
-  color: #FFD700; }
-
-.mdc li i {
-  font-size: 1.4rem;
-}
 
 /* .container ul {
   display: flex;
@@ -65,11 +43,60 @@ ul li {
   align-items: center;
   flex-wrap: wrap; } */
 
-  .container ul {
-    display: grid;
-    grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;}
+  .score {
+    background: #000;
+    color: #fff;
+    padding: 0.1rem 0.5rem;
+    border-radius: 0.3rem 0.3rem 0 0;
+  }
 
-.container ul li {
+  .score ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .score ul li span {
+    font-size: 1.6rem;
+    vertical-align: sub;
+    margin: 0 0.5rem;
+  }
+
+  #gameOver {
+    background: #b49450;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0.3rem;
+  }
+
+  #gameOver:first-child {
+    padding: 2rem 0;
+    font-size: 2rem;
+  }
+
+  #gameOver .score {
+    background: transparent;
+    padding: 1rem 0;
+  }
+
+  #gameOver a {
+    background: #000;
+    color: #fff;
+    padding: 0.3rem 0.8rem;
+    text-decoration: none;
+    border-radius: 0.3rem;
+    font-size: 1.4rem;
+  }
+
+  .container ul.gccm {
+    display: grid;
+    grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%; 
+    padding: 1%;}
+
+.container ul.gccm li {
   width: 4vw;
   height: 4vw;
   background-color: #b49450;
@@ -87,11 +114,11 @@ ul li {
   background-position: center;
 }
 
-.container ul li.diamond {
+.container ul.gccm li.diamond {
   background-image: url('diamond.png');
  }
 
- .container ul li.empty {
+ .container ul.gccm li.empty {
   background-image: none;
  }
 
@@ -332,11 +359,10 @@ ul li {
 
 /* Media Queries */
 @media screen and (min-width: 320px) and (max-width: 567px) {
-.container,
-  .mdc ul {
+.container{
     width: 98%;
     padding: 1%; }
-  .container ul li {
+  .container ul.gccm li {
     width: 1.6rem;
     height: 1.6rem;
     margin: 0 0.3rem 0.5rem 0.3rem;
