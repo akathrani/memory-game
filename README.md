@@ -5,12 +5,9 @@ The game ends when all diamonds are found. The user's score is the number of squ
 
 <ul>
 	<li>Make sure you have a recent version of <code>Node.js</code> installed.</li>
-	<li>Create React App to make a new project:</li>
+	<li>Create React App to make a new project: <code>npx create-react-app diamond-sweeper</code></li>
 	<li>Delete all files in the src/ folder of the new project.</li>
-
-```bash
-	npx create-react-app diamond-sweeper
-```
+	
 ```bash
 	cd diamond-sweeper
 	cd src
@@ -24,6 +21,8 @@ The game ends when all diamonds are found. The user's score is the number of squ
 	# Then, switch back to the project folder
 	cd ..
 ```	
-<li>And copy folders src, public from memory-game-master</li>
+<li>Now, copy folders src and public from memory-game-master.</li>
 
-Now if you run <code>npm start</code> in the project folder and open <code>http://localhost:3000</code> in the browser, you should see Diamond Sweeper.
+Since now you are done with a set up, run <code>npm start</code> in the project folder and open <code>http://localhost:3000</code> in the browser, you should see Diamond Sweeper.
+
+![Diamond Sweeper](https://github.com/akathrani/memory-game/blob/master/src/game.png)
