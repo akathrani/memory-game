@@ -6,20 +6,20 @@ The game ends when all diamonds are found. The user's score is the number of squ
 <ul>
 	<li>Make sure you have a recent version of <code>Node.js</code> installed.</li>
 	<li>Create React App to make a new project: <code>npx create-react-app diamond-sweeper</code></li>
-	<li>Delete all files in the src/ folder of the new project.</li>
+	<li>Delete all files in the <code>src</code> folder of the new project.</li>
 	
 ```bash
-	cd diamond-sweeper
-	cd src
+cd diamond-sweeper
+cd src
 
-	# If you're using a Mac or Linux:
-	rm -f *
+# If you're using a Mac or Linux:
+rm -f *
 
-	# Or, if you're on Windows:
-	del *
+# Or, if you're on Windows:
+del *
 
-	# Then, switch back to the project folder
-	cd ..
+# Then, switch back to the project folder
+cd ..
 ```	
 <li>Now, copy folders src and public from memory-game-master.</li>
 
